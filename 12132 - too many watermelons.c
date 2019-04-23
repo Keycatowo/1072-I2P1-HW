@@ -23,7 +23,7 @@ int main(void)
     for(j=1;j<=n;j++)
     {
         i = temp;
-        while(i<=5)
+        while(i<=n)
         {
             a[i]=temptemp[i];
             if(a[i]==b[j])
@@ -31,9 +31,9 @@ int main(void)
                 ans[j]++;
                 a[i]=0;
                 temp=i+1;
-                i=6;
+                i=n+1;
             }
-            else if(i==5)
+            else if(i==n)
             {
                 ans[j]=0;
                 i++;
